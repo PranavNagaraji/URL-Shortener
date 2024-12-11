@@ -13,9 +13,7 @@ Authentication using jwt Tokens has been commented out (Not particularly confide
 <br>
 implemented using Server side rendering
 <br>
-<p>*Tabspace* Dedicated usage of collections 1.users </p>
-<br>
-<p>*Tabspace*2.urls</p>
-<br>
-<p>*Tabspace**Tabspace*are to be created in mongodb to use this url shortener in local host </p>
+<p>Dedicated usage of collections 1.users </p>
+<p>2.urls</p>
+<p>are to be created in mongodb to use this url shortener in local host </p>
   
