@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            font-family:'Courier New', Courier, monospace;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>URL Shortener</h1>
+    <% if(locals.short_id!=null){ %>
+        <p>Shortened URL Generated:http://localhost:8008/url/<%=short_id %></p>
+    <% } %>
+    <form method="POST" action="/url" autocomplete="off">
+        <legend>
+            <span>Paste the Link you want to shorten:</span>
+            <input type="text" name="url" placeholder="https://ABC123.com" value="">
+            <button type="submit" name="submit" value="clicked">Shorten!</button>
+        </legend>
+    </form>
+    <% if (locals.allUrls && locals.allUrls.length>0) { %>
+        <table>
+            <thead>
+                <th>S.No</th>
+                <th>Short-Id</th>
+                <th>Original-Url</th>
+                <th>No. of Clicks</th>
+            </thead>
+            <tbody>
+                <% allUrls.forEach((e,i) => { %>
+                    <tr>
+                        <td><%= i+1 %></td>
+                        <td><%= e.shortId %></td>
+                        <td><%= e.originalUrl %></td>
+                        <td><%= e.visitHistory.length %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    <% } %>
+</body>
+</html>
