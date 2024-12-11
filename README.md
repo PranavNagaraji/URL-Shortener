@@ -13,9 +13,9 @@ Authentication using jwt Tokens has been commented out (Not particularly confide
 <br>
 implemented using Server side rendering
 <br>
-$emsp Dedicated usage of collections 1.users 
+<p>$emsp Dedicated usage of collections 1.users </p>
     <br>
-&emsp 2.urls
+<p>&emsp 2.urls</p>
 <br>
-&emsp are to be created in mongodb to use this url shortener in local host 
+<p>&emsp are to be created in mongodb to use this url shortener in local host </p>
   
