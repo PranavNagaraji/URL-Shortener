@@ -19,7 +19,7 @@ A simple URL shortener built using Node.js, Express, and MongoDB.
 - Create the following collections in MongoDB:
   1. **Users**
   2. **URLs**
-
+- Please do make sure you have gone through all of the naming conventions and MVC convention used for folders and for saving documents
 ---
 
 ### Notes
